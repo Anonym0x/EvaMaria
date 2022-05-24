@@ -64,7 +64,7 @@ async def answer(bot, query):
                 logger.exception(e)
                 f_caption=f_caption
         if f_caption is None:
-            f_caption = f"{file.file_name}"
+            f_caption = f"{file.file_caption}"
         results.append(
             InlineQueryResultCachedDocument(
                 title=file.file_name,
